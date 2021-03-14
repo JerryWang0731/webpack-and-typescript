@@ -1,4 +1,5 @@
 const path = require('path');
+const { Extension } = require('typescript');
 
 module.exports = {
     entry: './src/index.ts',
@@ -10,6 +11,9 @@ module.exports = {
                 include: [path.resolve(__dirname, 'src')]
             }
         ]
+    },
+    resolve: {
+        extensions: ['.ts', '.js']
     },
     output: {
         publicPath: "public", // in memory webpack-dev-server 
