@@ -2,6 +2,7 @@ const path = require('path');
 const { Extension } = require('typescript');
 
 module.exports = {
+    devtool: "eval-source-map",  // "source-map"
     entry: './src/index.ts',
     module: {
         rules: [         
